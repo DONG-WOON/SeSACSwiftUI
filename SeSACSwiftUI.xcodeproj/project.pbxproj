@@ -13,6 +13,8 @@
 		720FC3972B01A885005EB32D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 720FC3962B01A885005EB32D /* Preview Assets.xcassets */; };
 		720FC39E2B01B942005EB32D /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720FC39D2B01B942005EB32D /* MyView.swift */; };
 		727B6F342B01C8E60047F57E /* RenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727B6F332B01C8E60047F57E /* RenderView.swift */; };
+		727B6F362B03070B0047F57E /* TamagotchiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727B6F352B03070B0047F57E /* TamagotchiView.swift */; };
+		727B6F382B033BAC0047F57E /* DummyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727B6F372B033BAC0047F57E /* DummyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		720FC3962B01A885005EB32D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		720FC39D2B01B942005EB32D /* MyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
 		727B6F332B01C8E60047F57E /* RenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderView.swift; sourceTree = "<group>"; };
+		727B6F352B03070B0047F57E /* TamagotchiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TamagotchiView.swift; sourceTree = "<group>"; };
+		727B6F372B033BAC0047F57E /* DummyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 				720FC38F2B01A883005EB32D /* SeSACSwiftUIApp.swift */,
 				720FC3912B01A883005EB32D /* ContentView.swift */,
 				720FC39D2B01B942005EB32D /* MyView.swift */,
+				727B6F352B03070B0047F57E /* TamagotchiView.swift */,
+				727B6F372B033BAC0047F57E /* DummyView.swift */,
 				727B6F332B01C8E60047F57E /* RenderView.swift */,
 				720FC3932B01A885005EB32D /* Assets.xcassets */,
 				720FC3952B01A885005EB32D /* Preview Content */,
@@ -144,6 +150,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				720FC39E2B01B942005EB32D /* MyView.swift in Sources */,
+				727B6F382B033BAC0047F57E /* DummyView.swift in Sources */,
+				727B6F362B03070B0047F57E /* TamagotchiView.swift in Sources */,
 				720FC3922B01A883005EB32D /* ContentView.swift in Sources */,
 				727B6F342B01C8E60047F57E /* RenderView.swift in Sources */,
 				720FC3902B01A883005EB32D /* SeSACSwiftUIApp.swift in Sources */,
