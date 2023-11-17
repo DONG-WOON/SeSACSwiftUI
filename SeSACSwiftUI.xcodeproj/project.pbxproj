@@ -16,6 +16,7 @@
 		727B6F362B03070B0047F57E /* TamagotchiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727B6F352B03070B0047F57E /* TamagotchiView.swift */; };
 		727B6F382B033BAC0047F57E /* DummyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727B6F372B033BAC0047F57E /* DummyView.swift */; };
 		727B6F3A2B04DA000047F57E /* PosterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727B6F392B04DA000047F57E /* PosterView.swift */; };
+		727B6F402B05A85B0047F57E /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727B6F3F2B05A85B0047F57E /* SearchView.swift */; };
 		727B6F422B05AE1B0047F57E /* TransitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727B6F412B05AE1B0047F57E /* TransitionView.swift */; };
 		727B6F442B05B4660047F57E /* NavigationLazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727B6F432B05B4660047F57E /* NavigationLazyView.swift */; };
 /* End PBXBuildFile section */
@@ -31,6 +32,7 @@
 		727B6F352B03070B0047F57E /* TamagotchiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TamagotchiView.swift; sourceTree = "<group>"; };
 		727B6F372B033BAC0047F57E /* DummyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyView.swift; sourceTree = "<group>"; };
 		727B6F392B04DA000047F57E /* PosterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterView.swift; sourceTree = "<group>"; };
+		727B6F3F2B05A85B0047F57E /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		727B6F412B05AE1B0047F57E /* TransitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionView.swift; sourceTree = "<group>"; };
 		727B6F432B05B4660047F57E /* NavigationLazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLazyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,6 +72,7 @@
 				720FC39D2B01B942005EB32D /* MyView.swift */,
 				727B6F352B03070B0047F57E /* TamagotchiView.swift */,
 				727B6F392B04DA000047F57E /* PosterView.swift */,
+				727B6F3F2B05A85B0047F57E /* SearchView.swift */,
 				727B6F412B05AE1B0047F57E /* TransitionView.swift */,
 				727B6F372B033BAC0047F57E /* DummyView.swift */,
 				727B6F332B01C8E60047F57E /* RenderView.swift */,
@@ -162,6 +165,7 @@
 				727B6F382B033BAC0047F57E /* DummyView.swift in Sources */,
 				727B6F362B03070B0047F57E /* TamagotchiView.swift in Sources */,
 				720FC3922B01A883005EB32D /* ContentView.swift in Sources */,
+				727B6F402B05A85B0047F57E /* SearchView.swift in Sources */,
 				727B6F422B05AE1B0047F57E /* TransitionView.swift in Sources */,
 				727B6F342B01C8E60047F57E /* RenderView.swift in Sources */,
 				727B6F3A2B04DA000047F57E /* PosterView.swift in Sources */,
