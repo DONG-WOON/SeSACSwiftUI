@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct PosterView: View {
+
+    @Environment(\.colorScheme) var colorScheme
+    @State private var isPresented = false
+    
     var body: some View {
         ScrollView(showsIndicators: true) {
             LazyVStack {
@@ -16,8 +20,14 @@ struct PosterView: View {
                         .onAppear {
                             print(item)
                         }
+                        .onTapGesture {
+                            isPresented.toggle()
+                        }
                 }
             }
+        }
+        .sheet(isPresented: $isPresented) {
+            DummyView()
         }
     }
 }

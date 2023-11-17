@@ -7,13 +7,29 @@
 
 import SwiftUI
 
+extension EnvironmentValues {
+    public var item: Int {
+        return 1
+    }
+}
+
 struct RenderView: View {
     
+    @Environment(\.item) var item
+    @Environment(\.colorScheme) var colorScheme
+    @Environment(\.dismiss) private var dismiss
+    
     @State private var age: Int = 10
+    
+    init(age: Int = 10) {
+        self.age = age
+        print(self)
+    }
     
     var body: some View {
         NavigationView {
             VStack {
+                
                 HStack {
                     RoundedRectangle(cornerRadius: 10)
                         .fill(LinearGradient(
