@@ -47,15 +47,18 @@ struct Movie: Hashable, Identifiable {
     let name: String
     let category: Category
     let color: Color
+    let count: Int
     
-    init(id: UUID = UUID(), name: String, category: Category, color: Color = .random()) {
+    init(id: UUID = UUID(), name: String, category: Category, color: Color = .random(), count: Int = 10) {
         self.id = id
         self.name = name
         self.category = category
         self.color = color
+        self.count = count
     }
     
     enum Category: String {
+       
         case 액션
         case 로맨스
         case 코미디
@@ -65,8 +68,9 @@ struct Movie: Hashable, Identifiable {
 
 struct SearchView: View {
     
-    @State var text: String = ""
-    @State var isPresented: Bool = false
+    @State private var text: String = ""
+    @State private var isPresented: Bool = false
+    @State private var showChart = false
     
     private let movies = [
         Movie(name: "A", category: .로맨스),
@@ -115,7 +119,7 @@ struct SearchView: View {
         .searchable(text: $text, placement: .navigationBarDrawer, prompt: Text("입력하이소"))
         
         NavigationView {
-            LazyVStack(alignment: .leading, spacing: 10) {
+            List {
                 ForEach(filteredMovies, id: \.self) { item in
                     NavigationLink {
                         NavigationLazyView(SearchDetailView(title: item.name))
@@ -131,13 +135,15 @@ struct SearchView: View {
                     }
                 }
             }
-            .padding([.horizontal], 20)
             .navigationTitle("검색")
         }
         .foregroundColor(.black)
         .searchable(text: $text, placement: .navigationBarDrawer, prompt: Text("입력하이소"))
         .onSubmit {
             print("sefsefsefsef")
+        }
+        .sheet(isPresented: $showChart) {
+            ChartView(movies: [])
         }
     }
 }
