@@ -100,13 +100,19 @@ struct SearchView: View {
                 .navigationDestination(for: Movie.self) { item in
                     NavigationLazyView(SearchDetailView(title: item.name))
                 }
+                .toolbar {
+                    
+                }
+                
             }
-            .padding([.horizontal], 20)
+            .padding(.horizontal, 20)
             .navigationTitle("검색")
+            .navigationBarTitleDisplayMode(.inline)
+            
+            Spacer()
         }
         .foregroundColor(.black)
         .searchable(text: $text, placement: .navigationBarDrawer, prompt: Text("입력하이소"))
-        
         
         NavigationView {
             LazyVStack(alignment: .leading, spacing: 10) {
@@ -157,7 +163,7 @@ struct SearchDetailView: View {
 
 struct SearchView_Previews: PreviewProvider {
     static var previews: some View {
-        SearchView1()
+        SearchView()
     }
 }
 
